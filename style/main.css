@@ -1,6 +1,8 @@
 :root{
     --vermelho:#E50914;
     --preta:#141414;
+    --braco:#F7F7F7;
+    --cinza: #666
 }
 
 *{
@@ -15,8 +17,12 @@ body{
    font-family: 'Arial', Times, serif;
    color:white;
 }
-
-
+a{
+    text-decoration: none;
+}
+a:hover{
+    box-shadow: #AAA;
+}
 header .container{
     display:flex;
     flex-direction: row;
@@ -37,7 +43,6 @@ header nav a{
     color:#AAA;
     margin-right: 10px;
 }
-
 
 header nav a:hover{
     color:#fff;
@@ -109,9 +114,28 @@ header nav a:hover{
     cursor: pointer;
 }
 
-
+/***************************************CAROUSEL*****************************************/
 .carrosel-filmes{
-    margin-top:5px;
+    margin-top:20px;
+    
+}
+.carrosel-filmes img{
+   perspective: 1000px;
+}
+.header-carousel{
+    color: var(--cinza) !important;
+}
+
+/***********************************FOOTER*********************************************/
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #F7F7F7;
+    border-top: 1px solid #EBEBEB;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 300;
 }
 
 
